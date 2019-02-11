@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Miner's guides by ARIOVERSUM</title>
+    <meta name="description" content="Blockchain platform for PHP developers">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/aro-300.png" class="logo">Arionum</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="getarionum.html">Get Arionum</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="downloads.html">Downloads</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Documentation&nbsp;</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="miners.html">How to mine</a><a class="dropdown-item" role="presentation" href="masternodes.html">Masternode guides</a><a class="dropdown-item" role="presentation" href="documentation.html">For PHP developers</a></div>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="community.html">Community</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="network.html">Network status</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead text-center text-white">
+        <div data-aos="zoom-in" data-aos-delay="200" class="masthead-content">
+            <div class="container">
+                <h1 class="masthead-heading mb-0">Miner's guide</h1>
+                <h2 class="masthead-subheading mb-0">to ARIOVERSUM</h2><a class="btn btn-primary btn-xl rounded-pill mt-5" role="button" href="#lead" style="background-color: rgb(52,58,64);">GET MORE DETAILS</a></div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+    <div class="container" id="what">
+        <div class="jumbotron" style="background-color: #ffffff;">
+            <h1 class="text-center" data-aos="zoom-in" data-aos-delay="300" id="lead">1. Choose your miner application</h1>
+            <p class="text-justify text-dark" data-aos="zoom-in" data-aos-delay="300">To mine <strong>ARO</strong> you need to understand that ARIONUM has 2 different mining rounds : a <strong>CPU round</strong> and a <strong>GPU round</strong>.</p>
+            <p class="text-justify text-dark" data-aos="zoom-in" data-aos-delay="300">The names for these rounds may be misleading as both rounds <strong>can be mined with either GPU or CPU</strong>. CPUs and GPUs can mine on both of the rounds and hashrates will be very different on each round. In general you will have a much
+                better hash rate in the GPU round than the CPU round due to different parameters of hashing algorythm and to the difficulty.</p>
+            <p class="text-justify text-dark" data-aos="zoom-in" data-aos-delay="300">To maximise your mining rewards, it is important to have good hash rates in both the GPU and CPU rounds. All available mining software will allow you to mine on both the CPU round and the GPU round, but not all of them will allow you to mine
+                with both your GPU and CPU.</p>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="text-center p-5"><i class="fa fa-gears icon" data-aos="zoom-in" data-aos-delay="300"></i></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="text-center display-4" data-aos="zoom-in" data-aos-delay="300">CPU Miners</h2>
+                        <a href="https://bitbucket.org/cryptogone/ariocppminer" target="_blank">
+                            <p class="text-center" data-aos="zoom-in" data-aos-delay="300">Cryptogone's CPU Miner<span class="small">&nbsp;(0.5% + first share fee)</span></p>
+                        </a>
+                        <a href="https://github.com/ProgrammerDan/arionum-java/releases/latest" target="_blank">
+                            <p class="text-center" data-aos="zoom-in" data-aos-delay="300">Dan's Java Miner&nbsp;<span class="small">&nbsp;(no fee)</span></p>
+                        </a>
+                        <a href="https://arionum.com/LightArionumD" target="_blank">
+                            <p class="text-center text-dark" data-aos="zoom-in" data-aos-delay="300">Official GUI Wallet &amp; Miner&nbsp;<span class="small">&nbsp;(no fee)</span></p>
+                        </a>
+                        <a href="https://github.com/arionum/miner" target="_blank">
+                            <p class="text-center text-dark" data-aos="zoom-in" data-aos-delay="300">Official PHP Miner&nbsp;<span class="small">&nbsp;(no fee)</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="text-center p-5"><i class="fa fa-gear icon text-dark" data-aos="zoom-in" data-aos-delay="300"></i></div>
+                </div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <h2 class="text-center display-4 text-dark" data-aos="zoom-in" data-aos-delay="300">GPU Miners</h2>
+                        <a href="https://github.com/arionum/miner" target="_blank">
+                            <p class="text-center text-dark" data-aos="zoom-in" data-aos-delay="300">Cryptogone's GPU Miner&nbsp;<span class="small">&nbsp;(1% fee)</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="text-center p-5"><i class="fa fa-gavel icon" data-aos="zoom-in" data-aos-delay="300"></i></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="text-center display-4" data-aos="zoom-in" data-aos-delay="300">CPU+GPU miners</h2>
+                        <a href="https://github.com/arionum/miner" target="_blank">
+                            <p class="text-center" data-aos="zoom-in" data-aos-delay="300">Bogdan's Miner&nbsp;<span class="small">&nbsp;(1% fee)</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="jumbotron" style="background-color: rgb(52,58,64);">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center text-white">2. Choose mining pool / no registration required</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="text-center p-5"><a href="http://aropool.com" target="_blank"><img src="assets/img/arionum.png" data-aos="zoom-in" data-aos-delay="300"></a></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="text-center display-4" data-aos="zoom-in" data-aos-delay="300">http://aropool.com</h2>
+                        <p class="text-justify" data-aos="zoom-in" data-aos-delay="300">Official pool provided by AroDev and Mercury80, core members of Arionum Developers Team</p>
+                        <p data-aos="zoom-in" data-aos-delay="300" class="small">pool has 5% fee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="text-center p-5"><a href="http://arionumpool.com" target="_blank"><i class="fa fa-question-circle icon text-dark" data-aos="zoom-in" data-aos-delay="300"></i></a></div>
+                </div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <h2 class="text-center display-4 text-dark" data-aos="zoom-in" data-aos-delay="300">http://arionumpool.com</h2>
+                        <p class="text-justify text-dark" data-aos="zoom-in" data-aos-delay="300">some basic text<br></p>
+                        <p data-aos="zoom-in" data-aos-delay="300" class="small text-dark">pool has 1% fee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="text-center p-5"><a href="http://arionum.rocks" target="_blank"><img src="assets/img/arionum.png" data-aos="zoom-in" data-aos-delay="300"></a></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="text-center display-4" data-aos="zoom-in" data-aos-delay="300">http://arionum.rocks</h2>
+                        <p class="text-justify" data-aos="zoom-in" data-aos-delay="300">some basic texts</p>
+                        <p data-aos="zoom-in" data-aos-delay="300" class="small">pool has no fee, but pool mine at arionumpool.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="text-center p-5"><a href="http://aro.cool" target="_blank"><img src="assets/img/arionum.png" data-aos="zoom-in" data-aos-delay="300"></a></div>
+                </div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <h2 class="text-center display-4 text-dark" data-aos="zoom-in" data-aos-delay="300">http://aro.cool</h2>
+                        <p class="text-justify text-dark" data-aos="zoom-in" data-aos-delay="300">Official pool provided by AroDev and Mercury80, core members of Arionum Developers Team. This pool is dedicated to slow/small miners.<br></p>
+                        <p data-aos="zoom-in" data-aos-delay="300" class="small text-dark">pool has 5% fee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="spacer">
+                <div class="row">
+                    <div class="col text-center"><a class="btn btn-primary btn-xl rounded-pill wallet" role="button" href="community.html">join our community<br></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="spacer">
+                <div class="row">
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5" style="background-color: rgb(52,58,64);">
+        <div class="text-center"><img src="assets/img/aro-300.png" id="logofooter" class="logo"></div>
+        <div class="container">
+            <p class="text-center text-white m-0">Copyright&nbsp;© Arionum Developers 2019</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

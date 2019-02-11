@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Arionum Network Status Page</title>
+    <meta name="description" content="Blockchain platform for PHP developers">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/aro-300.png" class="logo">Arionum</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="getarionum.html">Get Arionum</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="downloads.html">Downloads</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Documentation&nbsp;</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="miners.html">How to mine</a><a class="dropdown-item" role="presentation" href="masternodes.html">Masternode guides</a><a class="dropdown-item" role="presentation" href="documentation.html">For PHP developers</a></div>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="community.html">Community</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="network.html">Network status</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead text-center text-white">
+        <div data-aos="zoom-in" data-aos-delay="200" class="masthead-content">
+            <div class="container">
+                <h1 class="masthead-heading mb-0">Arionum network</h1>
+                <h2 class="masthead-subheading mb-0">status page</h2><a class="btn btn-primary btn-xl rounded-pill mt-5" role="button" href="#currentinfo" style="background-color: rgb(52,58,64);">GET MORE INFO</a></div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+    <section id="involved">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <h2 data-aos="zoom-in" data-aos-delay="300" class="display-4">Current supply</h2>
+                        <ul class="list-group" data-aos="zoom-in" data-aos-delay="300">
+                            <li class="list-group-item" id="currentsupply"><span>Current supply</span>
+                                <p class="pull-right"><strong>0</strong> ARO</p>
+                            </li>
+                            <li class="list-group-item" id="lockedsupply"><span>Locked in masternodes</span>
+                                <p class="pull-right"><strong>0</strong> ARO</p>
+                            </li>
+                            <li class="list-group-item" id="circulatingsupply"><span>Circulating supply</span>
+                                <p class="pull-right"><strong>0</strong>&nbsp;ARO<br></p>
+                            </li>
+                            <li class="list-group-item" id="inflation"><span>Inflation rate</span>
+                                <p class="pull-right"><strong>0</strong> %</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div id="currentinfo" class="p-5">
+                        <h2 data-aos="zoom-in" data-aos-delay="300" class="display-4">Mining info</h2>
+                        <ul class="list-group" data-aos="zoom-in" data-aos-delay="300">
+                            <li class="list-group-item" id="currentreward"><span>Current block reward</span>
+                                <p class="pull-right"><strong>0</strong> ARO</p>
+                            </li>
+                            <li class="list-group-item" id="currentblocktype"><span>Current block type</span>
+                                <p class="pull-right"><strong>0</strong></p>
+                            </li>
+                            <li class="list-group-item" id="currentblock"><span>Current block height</span>
+                                <p class="pull-right"><strong>0</strong></p>
+                            </li>
+                            <li class="list-group-item" id="difficulty"><span>Current difficulty</span>
+                                <p class="pull-right"><strong>0</strong></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="text-center p-5"><i class="la la-cloud icon" data-aos="zoom-in" data-aos-delay="300"></i></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 data-aos="zoom-in" data-aos-delay="300" class="display-4">&nbsp;Masternodes</h2>
+                        <ul class="list-group" data-aos="zoom-in" data-aos-delay="300">
+                            <li class="list-group-item" id="mnreward"><span>Masternode block reward</span>
+                                <p class="pull-right"><strong>0</strong> ARO</p>
+                            </li>
+                            <li class="list-group-item" id="masternode"><span>Masternodes count</span>
+                                <p class="pull-right"><strong>0</strong></p>
+                            </li>
+                            <li class="list-group-item"><span>Masternode requirement</span>
+                                <p class="pull-right"><strong>100000</strong>&nbsp;ARO<br></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Masternodes &nbsp;<span class="badge badge-pill badge-primary" id="masternodecount">0</span></a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" role="tabpanel" id="tab-1">
+                                <div class="thread-list-head"></div>
+                                <ul data-aos="zoom-in" data-aos-delay="300" id="masternodes" class="thread-list">
+                                    <li class="thread"><span class="time">last won</span><span class="title">Masternode IP</span><span class="icon"> s</span></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="tab-2"></div>
+                            <div class="tab-pane" role="tabpanel" id="tab-3"></div>
+                            <div class="tab-pane" role="tabpanel" id="tab-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5" style="background-color: rgb(52,58,64);">
+        <div class="text-center"><img src="assets/img/aro-300.png" id="logofooter" class="logo"></div>
+        <div class="container">
+            <p class="text-center text-white m-0">Copyright&nbsp;© Arionum Developers 2019</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
