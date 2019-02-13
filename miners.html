@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Miner's guides by ARIOVERSUM</title>
+    <title>Miners guide By ARIOVERSUM</title>
     <meta name="description" content="Blockchain platform for PHP developers">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -69,8 +69,11 @@
                     <div class="p-5">
                         <h2 class="text-center display-4" data-aos="zoom-in" data-aos-delay="300">CPU+GPU miners</h2>
                         <a href="https://github.com/bogdanadnan/ariominer" target="_blank">
-                            <p class="text-center" data-aos="zoom-in" data-aos-delay="300">Bogdan's Miner&nbsp;<span class="small">&nbsp;(1% fee)</span></p>
+                            <p class="text-center" data-aos="zoom-in" data-aos-delay="300">Bogdanadnan's Miner&nbsp;<span class="small">&nbsp;(1% fee)</span></p>
                         </a>
+                        <div>
+                            <p class="text-justify alert alert-success small" data-aos="zoom-in" data-aos-delay="300">This is fastest miner for the CPU round regardless of GPU hardware. The GPU mining speeds on GPU rounds are slightly slower than cryptogones. If you have <strong>AMD GPU</strong> hardware, we recommend checking out his <strong>beta branch</strong>                                as he has optimized the miner and it now far exceeds cryptogone's speeds on similar hardware. The CPU mining is comparable to cryptogone's standalone miner.<br></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,6 +91,10 @@
                         <a href="https://bitbucket.org/cryptogone/arionum-gpu-miner" target="_blank">
                             <p class="text-center text-dark" data-aos="zoom-in" data-aos-delay="300">Cryptogone's GPU Miner&nbsp;<span class="small">&nbsp;(1% fee)</span></p>
                         </a>
+                        <div>
+                            <p class="text-justify alert alert-info small" data-aos="zoom-in" data-aos-delay="300">This is the best choice if you have <strong>NVIDIA GPU</strong>s that you wish to mine with. Cryptogone has kept his CPU based miner and his GPU based one separate. The speed of his CPU miner is comparable to bogdanadnan's.
+                                Both his GPU based miner and his CPU based one have a <strong>windows release </strong>as well as directions to compile in linux.<br></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,15 +112,25 @@
                         <a href="https://bitbucket.org/cryptogone/ariocppminer" target="_blank">
                             <p class="text-center" data-aos="zoom-in" data-aos-delay="300">Cryptogone's CPU Miner<span class="small">&nbsp;(0.5% + first share fee)</span></p>
                         </a>
+                        <div>
+                            <p class="text-justify alert alert-secondary small" data-aos="zoom-in" data-aos-delay="300">While this CPU based miner is slower than bogdanadnan's, it does have the feature of being independent of any GPU mining code. If you will exclusively be using CPUs to mine with and don't mind a mild decrease in performance,
+                                this is the miner for you.</p>
+                        </div>
                         <a href="https://github.com/ProgrammerDan/arionum-java/releases/latest" target="_blank">
-                            <p class="text-center" data-aos="zoom-in" data-aos-delay="300">Dan's Java Miner&nbsp;<span class="small">&nbsp;(no fee)</span></p>
+                            <p class="text-center" data-aos="zoom-in" data-aos-delay="300">ProgrammerDan's Java Miner&nbsp;<span class="small">&nbsp;(no fee)</span></p>
                         </a>
+                        <div>
+                            <p class="text-justify alert alert-light small" data-aos="zoom-in" data-aos-delay="300">While this miner is slower than either Cryptogone's or Bogdanadnan's, it is written in Java. If you are having trouble getting either of the other miners to run in your current operating system, this is your best option.</p>
+                        </div>
                         <a href="https://arionum.com/LightArionumD" target="_blank">
                             <p class="text-center text-dark" data-aos="zoom-in" data-aos-delay="300">Official GUI Wallet &amp; Miner&nbsp;<span class="small">&nbsp;(no fee)</span></p>
                         </a>
                         <a href="https://github.com/arionum/miner" target="_blank">
                             <p class="text-center text-dark" data-aos="zoom-in" data-aos-delay="300">Official PHP Miner&nbsp;<span class="small">&nbsp;(no fee)</span></p>
                         </a>
+                        <div>
+                            <p class="text-justify alert alert-light small" data-aos="zoom-in" data-aos-delay="300">These two miners were released by the core development team of Arionum as a proof-of-concept. We do not advise actively mining with them. Instead, they are useful as a point of reference from a development standpoint.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,9 +155,11 @@
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div class="p-5">
-                        <h2 class="text-center display-4" data-aos="zoom-in" data-aos-delay="300">AroPool.com<br></h2>
-                        <p class="text-justify" data-aos="zoom-in" data-aos-delay="300">An official pool provided by AroDev and Mercury80, core members of Arionum Developers Team.<br></p>
-                        <p data-aos="zoom-in" data-aos-delay="300" class="small">This pool has a 5% fee<br></p>
+                        <a href="https://aropool.com" target="_blank">
+                            <h2 class="text-center display-4" data-aos="zoom-in" data-aos-delay="300">AroPool.com<br></h2>
+                        </a>
+                        <p class="text-justify" data-aos="zoom-in" data-aos-delay="300">The offical pool provided by AroDev and Mercury80, core members of the Arionum Development Team. Rewards structure: 30% block finder, 70% historic shares.<br></p>
+                        <p data-aos="zoom-in" data-aos-delay="300" class="small">This pool has a 5% fee in place to further support the Devfund as well as encourage a more egalitarian distribution of the network hashrate.<br></p>
                     </div>
                 </div>
             </div>
@@ -154,8 +173,10 @@
                 </div>
                 <div class="col-lg-6 order-lg-2">
                     <div class="p-5">
-                        <h2 class="text-center display-4 text-dark" data-aos="zoom-in" data-aos-delay="300">ArionumPool.com<br></h2>
-                        <p class="text-justify text-dark" data-aos="zoom-in" data-aos-delay="300">A community pool managed by trusted member HashPI, with regular giveaways for participating miners.<br></p>
+                        <a href="https://arionumpool.com/" target="_blank">
+                            <h2 class="text-center display-4 text-dark" data-aos="zoom-in" data-aos-delay="300">ArionumPool.com<br></h2>
+                        </a>
+                        <p class="text-justify text-dark" data-aos="zoom-in" data-aos-delay="300">A community pool managed by trusted member HashPI, with regular giveaways for participating miners. Rewards structure: 30% block finder, 70% historic shares.<br></p>
                         <p data-aos="zoom-in" data-aos-delay="300" class="small text-dark">This pool has a 1% fee<br></p>
                     </div>
                 </div>
@@ -170,8 +191,10 @@
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div class="p-5">
-                        <h2 class="text-center display-4" data-aos="zoom-in" data-aos-delay="300">Arionum.Rocks<br></h2>
-                        <p class="text-justify" data-aos="zoom-in" data-aos-delay="300">A community pool managed by trusted member OvErLoDe.</p>
+                        <a href="http://arionum.rocks" target="_blank">
+                            <h2 class="text-center display-4" data-aos="zoom-in" data-aos-delay="300">Arionum.Rocks<br></h2>
+                        </a>
+                        <p class="text-justify" data-aos="zoom-in" data-aos-delay="300">A community pool managed by trusted member OvErLoDe. Rewards structure: 100% historic shares. This pool is suitable for small miners.</p>
                         <p data-aos="zoom-in" data-aos-delay="300" class="small">This pool has no fee, but collectively mines to ArionumPool.com<br></p>
                     </div>
                 </div>
@@ -186,9 +209,13 @@
                 </div>
                 <div class="col-lg-6 order-lg-2">
                     <div class="p-5">
-                        <h2 class="text-center display-4 text-dark" data-aos="zoom-in" data-aos-delay="300">ARO.cool<br></h2>
-                        <p class="text-justify text-dark" data-aos="zoom-in" data-aos-delay="300">An official pool provided by AroDev and Mercury80, core members of Arionum Developers Team. This pool is dedicated to slow/small miners.<br></p>
-                        <p data-aos="zoom-in" data-aos-delay="300" class="small text-dark">This pool has a 5% fee<br></p>
+                        <a href="http://aro.cool" target="_blank">
+                            <h2 class="text-center display-4 text-dark" data-aos="zoom-in" data-aos-delay="300">ARO.cool<br></h2>
+                        </a>
+                        <p class="text-justify text-dark" data-aos="zoom-in" data-aos-delay="300">An official pool provided by AroDev and Mercury80, core members of Arionum Developers Team. This pool is dedicated to low hashrate / small miners. Rewards structure: 100% historic shares.<br></p>
+                        <p data-aos="zoom-in" data-aos-delay="300"
+                            class="small text-dark">This pool has a 5% fee - explain why<br></p>
+                        <p class="text-justify" data-aos="zoom-in" data-aos-delay="300">If you have any question, feel free to reach out in our&nbsp;<a href="https://arionum.info/discord/" target="_blank">Discord</a>.&nbsp;We love to help!</p>
                     </div>
                 </div>
             </div>
