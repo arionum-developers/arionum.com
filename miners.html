@@ -129,7 +129,7 @@
                             <p class="text-center text-dark" data-aos="zoom-in" data-aos-delay="300">Official PHP Miner&nbsp;<span class="small">&nbsp;(no fee)</span></p>
                         </a>
                         <div>
-                            <p class="text-justify alert alert-light small" data-aos="zoom-in" data-aos-delay="300">These two miners were released by the core development team of Arionum as a proof-of-concept. We do not advise actively mining with them. Instead, they are useful as a point of reference from a development standpoint.&nbsp;<strong>Official&nbsp;PHP</strong>                                miner is the only one <strong>working on testnets</strong>.</p>
+                            <p class="text-justify alert alert-light small" data-aos="zoom-in" data-aos-delay="300">These two miners were released by the core development team of Arionum as a proof-of-concept. We do not advise actively mining with them. Instead, they are useful as a point of reference from a development standpoint.&nbsp;<strong>Official PHP</strong>                                miner is the only one <strong>working on testnet</strong>s.</p>
                         </div>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
                             <h2 class="text-center display-4" data-aos="zoom-in" data-aos-delay="300">AroPool.com<br></h2>
                         </a>
                         <p class="text-justify" data-aos="zoom-in" data-aos-delay="300">The offical pool provided by AroDev and Mercury80, core members of the Arionum Development Team. Rewards structure: 30% block finder, 70% historic shares.<br></p>
-                        <p data-aos="zoom-in" data-aos-delay="300" class="small">This pool has a 5% fee in place to further support the Devfund as well as encourage a more egalitarian distribution of the network hashrate.<br></p>
+                        <p data-aos="zoom-in" data-aos-delay="300" id="aropool" class="small">This pool has a <strong>5%</strong> fee in place to further support the Devfund as well as encourage a more egalitarian distribution of the network hashrate.<br></p>
                     </div>
                 </div>
             </div>
@@ -177,7 +177,7 @@
                             <h2 class="text-center display-4 text-dark" data-aos="zoom-in" data-aos-delay="300">ArionumPool.com<br></h2>
                         </a>
                         <p class="text-justify text-dark" data-aos="zoom-in" data-aos-delay="300">A community pool managed by trusted member HashPI, with regular giveaways for participating miners. Rewards structure: 30% block finder, 70% historic shares.<br></p>
-                        <p data-aos="zoom-in" data-aos-delay="300" class="small text-dark">This pool has a 1% fee.<br></p>
+                        <p data-aos="zoom-in" data-aos-delay="300" id="arionumpool" class="small text-dark">This pool has a <strong>1%</strong> fee.<br></p>
                     </div>
                 </div>
             </div>
@@ -195,7 +195,7 @@
                             <h2 class="text-center display-4" data-aos="zoom-in" data-aos-delay="300">Arionum.Rocks<br></h2>
                         </a>
                         <p class="text-justify" data-aos="zoom-in" data-aos-delay="300">A community pool managed by trusted member OvErLoDe. Rewards structure: 100% historic shares. This pool is suitable for small miners.</p>
-                        <p data-aos="zoom-in" data-aos-delay="300" class="small">This pool has no fee, but collectively mines to ArionumPool.com.<br></p>
+                        <p data-aos="zoom-in" data-aos-delay="300" id="rocks" class="small">This pool has a&nbsp;<strong>0%</strong> fee and collectively mines to ArionumPool.com.<br></p>
                     </div>
                 </div>
             </div>
@@ -214,8 +214,57 @@
                         </a>
                         <p class="text-justify text-dark" data-aos="zoom-in" data-aos-delay="300">An official pool provided by AroDev and Mercury80, core members of Arionum Developers Team. This pool is dedicated to low hashrate / small miners. Rewards structure: 100% historic shares.<br></p>
                         <p data-aos="zoom-in" data-aos-delay="300"
-                            class="small text-dark">This pool has a 5% fee.<br></p>
-                        <p class="text-justify" data-aos="zoom-in" data-aos-delay="300">If you have any question, feel free to reach out in our&nbsp;<a href="https://arionum.info/discord/" target="_blank">Discord</a>.&nbsp;We love to help!</p>
+                            id="cool" class="small text-dark">This pool has a <strong>5%</strong> fee.<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="jumbotron" style="background-color: rgb(52,58,64);">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center text-white">2. Start mining</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="text-center p-5"><i class="fa fa-group icon" data-aos="zoom-in" data-aos-delay="300"></i></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="text-center display-4" data-aos="zoom-in" data-aos-delay="300">Point your miner to the mining pool</h2>
+                        <div>
+                            <p class="text-justify alert alert-success small" data-aos="zoom-in" data-aos-delay="300">After you’ve selected a pool, just point your miner to the pool-address and start mining.<br><br>The required parameters and settings are documented at the pool-website and at the miner github/bitbucket webpage (including the
+                                source of the miner)<br><br>As soon as you’ve submitted your first nonce you will be able to find your wallet-address in the pool statistics.</p>
+                        </div>
+                        <p class="text-justify" data-aos="zoom-in" data-aos-delay="300">If you will have any problem with the pool or the miner software, feel free to reach out in our&nbsp;<a href="https://arionum.info/discord/" target="_blank">Discord</a>.&nbsp;We love to help! Or just come to visit us and share
+                            your experiences with us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="text-center p-5"><i class="fa fa-user icon text-dark" data-aos="zoom-in" data-aos-delay="300"></i></div>
+                </div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <h2 class="text-center display-4 text-dark" data-aos="zoom-in" data-aos-delay="300">Solo mining</h2>
+                        <div>
+                            <p class="text-justify alert alert-info small" data-aos="zoom-in" data-aos-delay="300">As with any PoW cryptocurrency, you can also mine for aro yourself outside a pool. With ‘solo’ mining you will mine <strong>directly onto a node</strong>, sharing both your public and private key with that node. We therefore
+                                <strong>strongly recommend to set-up your own node</strong> in a local secure environment. It is your own responsibility to protect your own keys.<br>&nbsp;&nbsp;<br>Currently <strong>only ProgrammerDan’s Java miner</strong>                                and the <strong>official PHP miner</strong> can be used for mining onto a node.<br><br>Alternatively there is a pool available that let’s you mine solo without exposing your private key. The pool is set reward the finder
+                                of a block with the entire reward. An additional benefit is that you can use all available miners to mine ‘solo’ at this pool.<br></p>
+                        </div>
                     </div>
                 </div>
             </div>
