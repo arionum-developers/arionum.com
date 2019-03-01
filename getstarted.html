@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>How to get ARIONUM</title>
+    <title>How to get started with development?</title>
     <meta name="description" content="Blockchain platform for PHP developers">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -51,15 +51,52 @@
         <div class="bg-circle-3 bg-circle"></div>
         <div class="bg-circle-4 bg-circle"></div>
     </header>
-    <section id="quickstart">
+    <div class="container text-justify" id="quickstart">
+        <div class="jumbotron" style="background-color: #ffffff;">
+            <h1 class="text-center" data-aos="zoom-in" data-aos-delay="300">Create your first application.</h1>
+            <p data-aos="zoom-in" data-aos-delay="300" class="alert alert-secondary">Arionum have prepared components that you can easily integrate with your new or existing applications. Let's start with one, where we will use Nette framework and pxgamer's node API wrapper. We will create simple donation status page. As a
+                first step we will prepare development environment.</p>
+        </div>
+    </div>
+    <div>
         <div class="container">
-            <div class="spacer">
-                <div class="row">
-                    <div class="col text-center"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Installing Nette framework and API wrapper</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-justify">In this tutorial we'll expect that you have php 7.2+, you are familiar with composer dependency manager and you already have it installed in your operating system. If not, you can download it from this&nbsp;<a href="https://getcomposer.org/download/"
+                            target="_blank">link</a>&nbsp;or simply install it by "apt-get install composer" * command. As a first step, we will start with &nbsp;downloading nette application skeleton. Copy this line to your terminal /command line/ where
+                        you want to have it.<br><span class="small pull-right">* (debian/ubuntu users only)</span></p>
+                    <p><br></p>
+                    <p class="text-dark code">composer create-project nette/web-project donation-page<br></p>
+                    <p class="text-justify">We will see something like this. You can enter to downloaded directory "donation-page" and check files there<br></p><img class="img-fluid" src="assets/img/installnette.png">
+                    <p><br>This is basic structure for our php application</p><img class="img-fluid" src="assets/img/netteroot.png">
+                    <p class="text-justify"><br>Very nice, we have application skeleton ready, but as aro uses php 7.2 as a minimal requirement, we will need to change our composer.json acordingly. Check last lines in composer.json, where php version for our application is defined,
+                        and change it from `"php" : "5.6"` to `"php": "7.2"` as it is on picture bellow</p><img class="img-fluid" src="assets/img/changecomposerjson.png">
+                    <p class="text-justify"><br>Nette framework (webserver exactly) will need write access to log and temp directory.</p>
+                    <p class="text-dark code">chmod -R 777 log temp<br></p>
+                    <p class="text-justify small">Of course this is required and will work only in linux operating system.<br></p>
+                    <p class="text-justify">And after that we can install php wrapper for intercation with arionum node</p>
+                    <p class="text-dark code">composer require pxgamer/arionum-php<br></p>
+                    <p class="text-justify">We will see something like this<br></p><img class="img-fluid" src="assets/img/apiwrapper.png">
+                    <p class="text-justify"><br>Now we have installed all required components we needed to start with. So we can spin up integrated php webserver</p>
+                    <p class="text-dark code">php -S localhost:8080 -t www<br></p>
+                    <p class="text-justify">When we now open address http://localhost:8080 in web browser, we will see this result<br></p><img class="img-fluid" src="assets/img/netteready.png">
+                    <h1 class="text-center"><br>Start code!</h1>
+                    <p class="text-justify"><br>All works as it should, our environment is prepared, let's start to code. As a first step we will clean up template little bit. Template file that we are going to change is located in "app/presenters/templates/ homepage/default.latte",
+                        open it and remove unnecessary content, change a title, remove css image from h1 element and center h1 with css.</p><img class="img-fluid" src="assets/img/cleanup.png">
+                    <p class="text-justify"><br>Now we can open homepage presenter, where we will load desired values and prepare them for our view. Homepage presenter is located in "app/presenters/ HomepagePresenter.php".</p><img class="img-fluid" src="assets/img/homepagepresenter.png">
+                    <p
+                        class="text-justify"><br>And back to template where we will render assigned variables.</p><img class="img-fluid" src="assets/img/displayvalues.png">
+                        <p class="text-justify"><br>After saving files, we can refresh our webpage in web browser and voila.</p><img class="img-fluid" src="assets/img/donationdone.png">
+                        <p class="text-justify"><br>We have our donation status page. That was simple, easy and quick, right? :)&nbsp;</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <section>
         <div class="container">
             <div class="spacer">
